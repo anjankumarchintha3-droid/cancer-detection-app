@@ -6,7 +6,7 @@ MODEL_PATH = "cancer_detection_model.h5"
 
 # Download model file if it doesn't exist
 if not os.path.exists(MODEL_PATH):
-    url = "https://drive.google.com/uc?id=1ElUbH5YK2henRCD6yy14AN6J2w8RfHHSV"  # 👈 Paste your link here
+    url = "https://drive.google.com/uc?export=download&id=1ElUbH5YK2henRCD6yy14AN6J2w8RfHHSV"  # 👈 Paste your link here
     gdown.download(url, MODEL_PATH, quiet=False)
 
 model = load_model(MODEL_PATH)
